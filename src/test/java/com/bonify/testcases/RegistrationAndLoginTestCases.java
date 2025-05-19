@@ -29,7 +29,6 @@ public class RegistrationAndLoginTestCases extends BaseTest {
     @Description("verify Login And Logout Flow With Existing User")
     public void verifyLoginAndLogoutFlowWithExistingUser() {
         HomePage homePage=new HomePage(driver,test);
-
         String existingUserEmail="subhadipsinha12345@gmail.com";
         String existingPassword="A@123456";
 
