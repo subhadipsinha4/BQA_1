@@ -33,7 +33,7 @@ public class BaseTest {
         }
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUpBase(Method method) {
         getPropertie();
         test = ExtentReportManager.createTest(method.getName());
