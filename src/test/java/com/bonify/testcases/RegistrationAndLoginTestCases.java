@@ -11,7 +11,7 @@ public class RegistrationAndLoginTestCases extends BaseTest {
 
     public RegistrationAndLoginTestCases(){}
 
-    @Test(groups = {Groups.SMOKE,Groups.REGRESSION}, priority = 1)
+    @Test(groups = {Groups.SMOKE,Groups.REGRESSION})
     @Description("Verify new user registration flow")
     public void verifyNewUserRegistrationFlow() throws InterruptedException {
         HomePage homePage=new HomePage(driver,test);
@@ -26,7 +26,7 @@ public class RegistrationAndLoginTestCases extends BaseTest {
                 .verifyAccountConfirmationDetails(newUserEmail);
     }
 
-    @Test(groups = {Groups.REGRESSION}, priority = 2)
+    @Test(groups = {Groups.REGRESSION})
     @Description("verify Login And Logout Flow With Existing User")
     public void verifyLoginAndLogoutFlowWithExistingUser() {
         HomePage homePage=new HomePage(driver,test);
