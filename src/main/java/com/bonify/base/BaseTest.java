@@ -49,7 +49,7 @@ public class BaseTest {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void teardown(ITestResult result) {
 
         if (result.getStatus() == ITestResult.FAILURE) {

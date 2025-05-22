@@ -41,8 +41,6 @@ public class CommonActions {
         waitForSometime(5000);
         try {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#usercentrics-root")));
-//            ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
-//            System.out.println(" Scrolled to bottom to trigger banner.");
 
             waitForSometime(3000);
 
